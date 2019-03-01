@@ -11,15 +11,9 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
  * 
  *
  */
-public class App 
-{
-    public static void main( String[] args ) throws RunnerException, IOException
-    {
-
-        Options opt = new OptionsBuilder()
-                .include(SamplingEqVsMath.class.getSimpleName())
-                 .build();
-
-       new Runner(opt).run();
+public class App {
+    public static void main(String[] args) throws RunnerException, IOException {
+        Options opt = new OptionsBuilder().include(SamplingEqVsMath.class.getSimpleName()).build();
+        new Runner(opt).run();
     }
 }
